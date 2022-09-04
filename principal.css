@@ -123,7 +123,7 @@ font-size: 60px;
 .introduccion{
     height: auto;
 padding: 10px 30px 0px 30px;
-padding-top: 4rem;
+padding-top: 1rem;
 }
 
 .contenido-seccion h2{
@@ -268,7 +268,7 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 1rem;
 }
 
 .contenido-portafolio h2{
@@ -276,7 +276,7 @@ font-weight: bold;
     justify-content: center;
     padding-bottom: 1px;
     color: var(--colorletras1);
-    text-shadow: var(--sombraclara) 2px 0px;
+    text-shadow: var(--sombraclara) 2px 0px
 }
 .contenido-portafolio p{
 padding-top: 25px;
@@ -302,7 +302,11 @@ color:var(--colortextogeneral);
     align-items: center;
     padding-bottom: 2rem;
 }
-
+.caja-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+grid-row: 1fr 1fr 1fr;
+}
 .caja-portafolio img{
 width: 12rem;
 height: 12rem;
@@ -327,7 +331,7 @@ padding: 5px;
     height: auto;
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
 }
 
@@ -432,13 +436,13 @@ width: 100vw;
     list-style: none;
 }
 .contenedor-encabezado header nav ul li a{
-    display: flex;
+    display: none;
 }
 
 
 /* DAR COLOR Y ESPECIFICACIONES AL ICONO */
 .navegador-icono i{
-    display: none;
+    display: flex;
     font-size: 2.5rem;
     background-color: none;
     color:rgb(109, 79, 199);
