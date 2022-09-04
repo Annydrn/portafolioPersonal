@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 
 :root{
---colorletras1:rgb(90, 63, 119);
+--colorletras1:rgb(18, 2, 35);
 --colorletras2:rgb(13, 70, 94);
 --colorletras-iconos: rgb(5, 131, 143);
 --colortextogeneral:rgb(61, 59, 59) 2px;
@@ -34,7 +34,7 @@ scroll-behavior: smooth;
 }
 
 
-@media (max-width: 1600px ){
+/* @media (max-width: 1600px ){ */
     
 
 /* ---------------------------SECCION DE INICIO IMAGEN E INTRODUCCION----------------------------------------------- */
@@ -50,7 +50,7 @@ justify-content: center;
 .contenedor-imagen{
     display: flex;
     justify-content: center;
-    height: 40%;
+    height: 60%;
     padding-top: 7rem;
 
 }
@@ -123,7 +123,7 @@ font-size: 60px;
 .introduccion{
     height: auto;
 padding: 10px 30px 0px 30px;
-padding-top: 7rem;
+padding-top: 4rem;
 }
 
 .contenido-seccion h2{
@@ -217,7 +217,8 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .experiencia .caja-experiencia{
@@ -267,7 +268,7 @@ font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 4rem;
 }
 
 .contenido-portafolio h2{
@@ -315,7 +316,7 @@ padding: 5px;
 .caja-portafolio img:hover{
     width: 20rem;
     height: 20rem;
-    transition: 0.6s;
+    transition: 1s;
     cursor: pointer;
 }
 
@@ -326,7 +327,8 @@ padding: 5px;
     height: auto;
     display: flex;
     justify-content: center;
-    padding: 10px 30px 0px 30px;  
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .contenido-contacto h2{
@@ -372,7 +374,7 @@ padding: 5px;
 }
 
 .contenido-contacto .volverinicio a {
-    padding-bottom: 40px;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,13 +432,13 @@ width: 100vw;
     list-style: none;
 }
 .contenedor-encabezado header nav ul li a{
-    display: none;
+    display: flex;
 }
 
 
 /* DAR COLOR Y ESPECIFICACIONES AL ICONO */
 .navegador-icono i{
-    display: flex;
+    display: none;
     font-size: 2.5rem;
     background-color: none;
     color:rgb(109, 79, 199);
@@ -452,7 +454,7 @@ width: 100vw;
     background-color: #71c2ed;
     border-radius: 20%;
 }
-}
+
 
 
 /* *************************SEPARADOR @MEDIA********************************** */
@@ -462,16 +464,12 @@ header{
 width: auto;
 padding: 0;
 
-
 }
 
 .navegador-icono i{
     display: none;
 }   
 
-.nav{
-    width:min-content;
-}
 .contenedor-encabezado header nav ul {
     display: flex;
  justify-content:space-evenly;
@@ -654,14 +652,6 @@ padding: 1rem;
 }
 /* *******************************SECCION EXPERIENCIA***************************************** */
 
-/* 
-.experiencia .caja-experiencia {
-    display: flex;
-    justify-content: center;
-    height: 15rem;
-    width: 50rem;
-} */
-
 .experiencia .caja-foto-imagen img{
     border: 3px double;
     color: var(--acercamientoefecto);
@@ -676,8 +666,8 @@ padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 8px;
+    padding-top: 2rem;
+    padding-bottom: 2px;
     color: var(--colorletras1);
     text-shadow: var(--sombraclara) 2px 0px
 }
@@ -717,11 +707,7 @@ padding: 5px;
 }
 
 .caja-portafolio img:hover{
-    width: 20rem;
-    height: 20rem;
-    transition: 0.6s;
-    cursor: pointer;
+    text-shadow: var(--sombraclara) 2px 0px
 }
-
 
 }
