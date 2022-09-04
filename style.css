@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+--colorletras1:rgb(90, 63, 119);
+--colorletras2:rgb(13, 70, 94);
+--colorletras-iconos: rgb(5, 131, 143);
+--colortextogeneral:rgb(61, 59, 59) 2px;
+--colorpspan:rgb(7, 70, 128);
+--sombraclara:rgb(218, 223, 241);
+--acercamientoefecto:rgb(117, 113, 113);
+}
+
+body{
+font-family: 'Lato', sans-serif;
+background-image: url(/imagenes/boceto3nuves.jpg);
+background-position: center ;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+z-index: 101;
+}
+
+
+
+html{ 
+/* ME DEJA DESLIDAR AL HACER CLICK EN EL MENU */
+scroll-behavior: smooth;
+}
+
+
+@media (max-width: 480px ){
+
+/* ---------------------------SECCION DE INICIO IMAGEN E INTRODUCCION----------------------------------------------- */
+
+.inicio{
+background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
+background-size: cover;
+height: auto;
+display: flex;
+justify-content: center;
+padding: 1rem;
+padding-bottom: 0rem;
+}
+
+.contenedor-imagen{
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    padding-top: 28px;
+
+}
+.inicio .contenedor-imagen img{
+border: 7px double;
+color: var(--acercamientoefecto);
+display: flex;
+justify-content: center;
+border-radius: 90%;
+color: var(--colorletras-iconos);
+text-shadow: var(--sombraclara) 10px 20px;
+}
+
+.contenido-portaretrato h1{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    padding:2rem;   
+    color: var(--colorletras1);
+    text-shadow: var(--sombraclara) 2px 0px;
+}
+.contenido-portaretrato .cargo-1{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 0;
+    color: var(--colorletras2);
+    }
+.contenido-portaretrato .cargo-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding: 1rem;
+    color: var(--colorletras2);
+    }
+
+
+.inicio .contenido-portaretrato .aplicaciones{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.inicio .contenido-portaretrato .aplicaciones a{
+color: rgb(5, 131, 143);
+display: inline-block;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+margin: 0.8rem;
+font-size: 50px;
+transition: .4s;
+margin-top: 15px;
+text-shadow: 2px 15px 30px var(--sombraclara);
+
+}
+
+.inicio .contenido-portaretrato .aplicaciones a:hover{
+color: var(--acercamientoefecto);
+transition: .4s;
+font-size: 60px;
+}
+
+/* <!-- SECCION DE INTRODUCCION E INFORMACION PERSONAL --> */
+.introduccion{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 0px 30px;
+}
+
+
+
+.contenido-seccion h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorletras1);
+    text-shadow: var(--sombraclara) 2px 0px;
+    padding-top: 1rem;
+}
+
+.introduccion .contenido-seccion .descripcion{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font: 50px;
+    line-height: 20px;
+    color:var(--colortextogeneral);
+    width: 50rem;
+    }
+
+.introduccion .contenido-seccion p{
+font: 30px;
+line-height: 20px;
+color:var(--colortextogeneral);
+padding: auto;
+}
+
+.introduccion .contenido-seccion p span{
+color:var(--colorpspan);
+font-weight: bold;
+}
+.introduccion .contenido-seccion .columnas ul{
+    list-style: none;
+
+}
+.introduccion .fila{
+    display: flex;
+    padding-top: 1rem;
+}
+.introduccion .fila li{
+    color: var(--colortextogeneral);
+}
+.introduccion .fila strong{
+    color:var(--colorletras2);
+}
+
+.introduccion .fila .columnas{
+    width:50% ;
+    text-decoration: none;
+}
+.introduccion .fila .columnas h3{
+    color: var(--colorletras1);
+}
+.columnas h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduccion .columnas .contenedor-intereses{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.contenedor-button{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+.button{ 
+    text-decoration: none;
+    padding: 4.5px;
+    font-size: 15px;
+    color: var(--colortextogeneral);
+    background-color: var(--colorletras-iconos ) ;
+    border-radius: 6px ;
+    border: 10px solid var(--colortextogeneral);
+    box-shadow: 0 0 10px var(--sombraclara) ;
+}
+
+.button:hover{
+    color: var(--colortextogeneral);
+    transition: .4s;
+    font-size: 18px;
+}
+/* -----------------------------SECCION EXPERIENCIA------------------------------------------ */
+.experiencia{
+    background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 0px 30px;
+}
+
+.experiencia .caja-experiencia{
+    padding-bottom: 40px;
+}
+
+.experiencia .caja-experiencia img{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+}
+.experiencia .caja-foto-imagen{
+    border: 3px double;
+    color: var(--acercamientoefecto);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.caja-experiencia h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    color: var(--colorletras1);
+    text-shadow: var(--sombraclara) 2px 0px
+}
+.experiencia .caja1 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1px;
+    color:var(--colorletras2);
+    }
+.experiencia .caja2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    color: var(--colortextogeneral);
+}
+/* -------------------------------SECCION PORTAFOLIO---------------------------------------- */
+.portafolio{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.contenido-portafolio h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1px;
+    color: var(--colorletras1);
+    text-shadow: var(--sombraclara) 2px 0px;
+}
+.contenido-portafolio p{
+padding-top: 25px;
+padding-bottom: 25px;
+font: 50px;
+line-height: 20px;
+color:var(--colortextogeneral);
+}
+.contenido-portafolio p span{
+    color:var(--colorpspan);
+    font-weight: bold;
+    }
+.contenido-portafolio h3{
+    color: var(--colorletras2);
+    display: flex;
+    padding-right: 2rem;
+}    
+
+.caja-portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+
+}
+.caja-portafolio img{
+width: 15rem;
+height: 15rem;
+border: 5px double;
+color: var(--acercamientoefecto);
+display: flex;
+justify-content: center;
+padding: 5px;
+}
+.caja-portafolio img:hover{
+    width: 20rem;
+    height: 20rem;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------CONTENIDO-CONTACTO----------------------------------------------------- */
+.contacto{
+    background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
+    background-size: cover;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px 0px 30px;  
+}
+
+.contenido-contacto h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: var(--colorletras1);
+    text-shadow: var(--sombraclara) 2px 0px
+}
+.contenido-contacto h3{
+    display: flex;
+    justify-content: center;
+    padding-top:20px ;
+    padding-bottom: 10px;
+    color: var(--colorletras2);
+}
+
+.caja-contacto  i{
+    color: var(--colorletras-iconos);
+    background-color:none ;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-decoration: none;
+
+}
+.contenido-contacto p{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 15px;
+}
+.contenido-contacto h4{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.contenido-contacto .volverinicio a {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--colorletras1);
+}
+
+.contenido-contacto .volverinicio a:hover {
+    font-size: 22px;
+    color: var(--colorletras2);
+    transition: 1s;
+    text-shadow: var(--sombraclara) 2px 0px
+}
+
+/* ---------------------------------------MENU ------------------------------------------------------*/
+.contenedor-encabezado{
+    background-image: radial-gradient(circle at -70.44% 43.84%, #37909e 0, #80bdc7 3.85%, #6eb1bb.69%, #5fc9c9 11.54%, #5cc8d0 15.38%, #5bc8d7 19.23%, #5dc7de 23.08%, #61c5e4 26.92%, #68c4e9 30.77%, #71c2ed 34.62%, #7bc0f0 38.46%, #78aad9 42.31%, #79a8e2 46.15%, #8db3ff 50%, #a8b6f1 53.85%, #b4b4ee 57.69%, #beb1ea 61.54%, #c8aee6 65.38%, #d1abe0 69.23%, #d9a9da 73.08%, #e0a7d4 76.92%, #e6a5cc 80.77%, #eba4c5 84.62%, #efa3bd 88.46%, #f2a3b5 92.31%, #f3a3ad 96.15%, #f3a4a5 100%);
+    z-index: 100;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(78%);
+    }
+
+    /* para mover el logo de mi nombre */
+.contenedor-encabezado header{
+    max-width: 768px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    text-decoration: none;
+    } 
+    /* colocar color al logo de mi nombre */
+    .logo a {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: rgb(245, 207, 243);
+    text-shadow: 0 0 10px rgb(248, 0, 211);
+    text-decoration: none;
+    padding: -20px;
+    margin: 30px;
+    transition: .6s;
+    }
+    /* colocar color al DC mi nombre */
+    .logo a span {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 94, 0);
+    text-shadow: 0 0 10px  rgb(45, 113, 105);
+    transition: .8s;
+    } 
+    /* separar el menu del navegador del logo */
+    .contenedor-encabezado header ul{
+    display: none;
+    flex-wrap: wrap;
+    } 
+    
+    /* separar el menu en su interior */
+    .contenedor-encabezado header nav ul li a{
+    text-align: none;
+    margin: 0 10px;
+    padding: 1em;
+    transition: .6s;
+    text-decoration: none;
+    } 
+
+    /* cambio color de cada seccion*/
+    .contenedor-encabezado header ul li .active1{
+        color: rgb(193, 11, 157);
+    }
+    .contenedor-encabezado header ul li .active2{
+        color: rgb(144, 11, 144);
+    }
+    .contenedor-encabezado header ul li .active3{
+        color: rgb(127, 12, 193);
+    }
+    .contenedor-encabezado header ul li .active4{
+        color: rgb(90, 63, 119);
+    }
+    .contenedor-encabezado header ul li .active5{
+        color: rgb(16, 103, 140);
+    }
+    .contenedor-encabezado header ul li .active6{
+        color: rgb(13, 70, 94);
+    } 
+
+    /* CAMBIO COLOR DE SECCION AL PASAR EL MOUSE */
+    .contenedor-encabezado header nav ul li a:hover{
+    color: rgb(254, 240, 255);
+    font-size: 18px;
+    transition: .4s;
+    } 
+
+    /* DAR COLOR Y ESPECIFICACIONES AL ICONO */
+    .navegador-icono{
+    background-color: none;
+    color:rgb(109, 79, 199);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .navegador-icono :hover{
+    color: rgb(99, 55, 102);
+    font-size: 20px;
+    transition: .6s;
+    background-color: #71c2ed;
+    border-radius: 20%;
+    }
+
+
+}
+
+
+
+
+/* ---------------------------------------MENU ------------------------------------------------------*/
+/* .contenedor-encabezado{
+    background-image: radial-gradient(circle at -70.44% 43.84%, #37909e 0, #80bdc7 3.85%, #6eb1bb.69%, #5fc9c9 11.54%, #5cc8d0 15.38%, #5bc8d7 19.23%, #5dc7de 23.08%, #61c5e4 26.92%, #68c4e9 30.77%, #71c2ed 34.62%, #7bc0f0 38.46%, #78aad9 42.31%, #79a8e2 46.15%, #8db3ff 50%, #a8b6f1 53.85%, #b4b4ee 57.69%, #beb1ea 61.54%, #c8aee6 65.38%, #d1abe0 69.23%, #d9a9da 73.08%, #e0a7d4 76.92%, #e6a5cc 80.77%, #eba4c5 84.62%, #efa3bd 88.46%, #f2a3b5 92.31%, #f3a3ad 96.15%, #f3a4a5 100%);
+    z-index: 100;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(78%);
+    }
+     */
+    /* para mover el logo de mi nombre */
+    /* .contenedor-encabezado header{
+    max-width: 768px;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    } */
+    /* colocar color al logo de mi nombre */
+    /* .logo a {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: rgb(245, 207, 243);
+    text-shadow: 0 0 10px rgb(248, 0, 211);
+    text-decoration: none;
+    padding: -20px;
+    margin: 30px;
+    transition: .6s;
+    }
+    /* colocar color al DC mi nombre */
+    /* .logo a span {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #f3a4a5;
+    text-shadow: 0 0 10px rgb(248, 0, 211);
+    transition: .8s;
+    } */
+    /* separar el menu del navegador del logo */
+    /* .contenedor-encabezado header ul{
+    display: none;
+    flex-wrap: wrap;
+    } */
+    
+    /* separar el menu en su interior */
+    /* .contenedor-encabezado header nav ul li a{
+    text-align: none;
+    margin: 0 10px;
+    padding: 1em;
+    transition: .6s;
+    text-decoration: none;
+    
+    } */ 
+    /* cambio color de cada seccion*/
+    /* .contenedor-encabezado header ul li .active1{
+        color: rgb(193, 11, 157);
+    }
+    .contenedor-encabezado header ul li .active2{
+        color: rgb(144, 11, 144);
+    }
+    .contenedor-encabezado header ul li .active3{
+        color: rgb(127, 12, 193);
+    }
+    .contenedor-encabezado header ul li .active4{
+        color: rgb(90, 63, 119);
+    }
+    .contenedor-encabezado header ul li .active5{
+        color: rgb(16, 103, 140);
+    }
+    .contenedor-encabezado header ul li .active6{
+        color: rgb(13, 70, 94);
+    } */
+    /* CAMBIO COLOR DE SECCION AL PASAR EL MOUSE */
+    /* .contenedor-encabezado header nav ul li a:hover{
+    color: rgb(254, 240, 255);
+    font-size: 18px;
+    transition: .4s;
+    } */
+    /* DAR COLOR Y ESPECIFICACIONES AL ICONO */
+    /* .navegador-icono{
+    background-color: none;
+    color:rgb(109, 79, 199);
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .navegador-icono:hover{
+    color: rgb(99, 55, 102);
+    font-size: 20px;
+    transition: .6s;
+    background-color: #71c2ed;
+    border-radius: 20%;
+    } */
+
+
