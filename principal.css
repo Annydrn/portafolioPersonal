@@ -123,10 +123,7 @@ font-size: 60px;
 /* <!-- SECCION DE INTRODUCCION E INFORMACION PERSONAL --> */
 .introduccion{
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 30px 0px 30px;
+padding: 10px 30px 0px 30px;
 }
 
 
@@ -140,20 +137,18 @@ font-size: 60px;
     padding-top: 1rem;
 }
 
-.introduccion .contenido-seccion .descripcion{
+.introduccion .contenido-seccion p{
     padding-top: 25px;
     padding-bottom: 25px;
     font: 50px;
     line-height: 20px;
     color:var(--colortextogeneral);
-    width: 50rem;
     }
 
 .introduccion .contenido-seccion p{
 font: 30px;
-line-height: 20px;
 color:var(--colortextogeneral);
-padding: auto;
+padding: 0;
 }
 
 .introduccion .contenido-seccion p span{
@@ -170,6 +165,7 @@ font-weight: bold;
 }
 .introduccion .fila li{
     color: var(--colortextogeneral);
+    padding: 0;
 }
 .introduccion .fila strong{
     color:var(--colorletras2);
@@ -187,10 +183,12 @@ font-weight: bold;
     justify-content: center;
     align-items: center;
 }
-.introduccion .columnas .contenedor-intereses{
+.columnas .contenedor-intereses{
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+
 }
 
 .contenedor-button{
