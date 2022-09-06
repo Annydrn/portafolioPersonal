@@ -25,6 +25,7 @@ background-position: center ;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
+/* overflow: hidden; */
 z-index: 101;
 }
 
@@ -47,13 +48,18 @@ header{
     *position:fixed;
     z-index: 1;
 }
+.introduccion{
+    height: auto;
+padding: 10px 30px 0px 30px;
+padding-top: 1rem;
+}
 .contenido-portaretrato{
     background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
     background-size: cover;
     height: auto;
     flex-direction: column;
     justify-content: center;
-    padding-top: 0;
+    align-items: center;
     padding-bottom: 3rem;
 }
 .contenedor-imagen{
@@ -77,6 +83,7 @@ text-shadow: var(--sombraclara) 10px 20px;
 .contenido-portaretrato h1{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 25px;
     font-family: 'Lato', sans-serif;
     padding:2rem;   
@@ -86,9 +93,9 @@ text-shadow: var(--sombraclara) 10px 20px;
 .contenido-portaretrato .cargo-1{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 15px;
     font-family: 'Lato', sans-serif;
-    padding: 5px 0;
     color: var(--colorletras2);
     }
 .contenido-portaretrato .cargo-2{
@@ -105,7 +112,6 @@ text-shadow: var(--sombraclara) 10px 20px;
 .inicio .contenido-portaretrato .aplicaciones{
     display: flex;
     justify-content: center;
-    padding-bottom: 1rem;
 }
 
 .inicio .contenido-portaretrato .aplicaciones i{
@@ -132,7 +138,6 @@ font-size: 60px;
 /* <!-- SECCION DE INTRODUCCION E INFORMACION PERSONAL --> */
 .introduccion{
     height: auto;
-padding: 10px 30px 0px 30px;
 padding-top: 1rem;
 }
 
@@ -147,18 +152,13 @@ padding-top: 1rem;
 }
 
 .introduccion .contenido-seccion p{
+    font-family:Arial, Helvetica, sans-serif;
     padding-top: 25px;
     padding-bottom: 25px;
-    font: 50px;
+    font: 35px;
     line-height: 20px;
     color:var(--colortextogeneral);
     }
-
-.introduccion .contenido-seccion p{
-font: 30px;
-color:var(--colortextogeneral);
-padding: 0;
-}
 
 .introduccion .contenido-seccion p span{
 color:var(--colorpspan);
@@ -393,14 +393,14 @@ padding: 5px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     color: var(--colorletras1);
 }
 
 .contenido-contacto .volverinicio a:hover {
-    font-size: 22px;
     color: var(--colorletras2);
-    transition: 1s;
+    transform: scale(1.1);
+    transition: 0.4s;
     text-shadow: var(--sombraclara) 2px 0px
 }
 #selected{
@@ -492,7 +492,7 @@ padding: 5px;
 }
 
 
-
+}
 
 
 /* 
@@ -500,11 +500,14 @@ padding: 5px;
 
  @media (max-width: 750px ){
  
+body{
+    overflow-x: hidden;
+}
 
 .menu nav{
 position: fixed;
 top: 0;
-right: -250px;
+transform:translateX(200%) ;
 background:rgb(211, 150, 150);
 width: 250px;
 height: 100vh;
@@ -774,4 +777,4 @@ padding: 5px;
     text-shadow: var(--sombraclara) 2px 0px
 }
 
-} }
+} 
