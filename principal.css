@@ -515,6 +515,11 @@ padding: 40px;
 z-index: 1;
 transition: all 300ms;
 }
+#btn_menu{
+    z-index: 5900;
+}
+
+
 
 .menu ul {
     flex-direction: column;

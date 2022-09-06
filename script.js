@@ -1,18 +1,18 @@
-document.getElementById("btn_menu").addEventListener("click", mostrar_menu);
 
-document.getElementById("btn_menu").addEventListener("click", ocultar_menu);
+const btnMenu = document.querySelector("#btn_menu");
+const nav = document.getElementById("nav");
+let menuAbierto = false;
 
-nav = document.getElementById("nav");
-background_menu = document.getElementById("back_menu");
+btnMenu.addEventListener('click',()=>{
+   
 
-function mostrar_menu(){
+    if (menuAbierto) {
+        nav.style.transform = "translateY(200%)";
+        menuAbierto = false;
+    }else{
+        nav.style.transform = "translateY(0)";
+        menuAbierto = true;
+    }
+    
+});
 
-    nav.style.right = "0px";
-    background_menu.style.display = "block";
-}
-
-function ocultar_menu(){
-
-    nav.style.right = "-250px";
-    background_menu.style.display = "none";
-}
