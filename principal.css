@@ -44,8 +44,8 @@ scroll-behavior: smooth;
 header{ 
     width: 100%;
     height: 80px;
-    *position:fixed;
-    z-index: 1;
+    position:fixed;
+    z-index: 5000;
 }
 .contenido-portaretrato{
     background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
