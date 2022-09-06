@@ -29,8 +29,6 @@ overflow-x:hidden;
 z-index: 101;
 }
 
-
-
 html{ 
 /* ME DEJA DESLIDAR AL HACER CLICK EN EL MENU */
 scroll-behavior: smooth;
@@ -376,7 +374,6 @@ padding: 5px;
     display: flex;
     justify-content: center;
     align-self: center;
-    padding-bottom: 15px;
 }
 
 .contenido-contacto h4{
@@ -408,6 +405,7 @@ padding: 5px;
     transition: 0.4s;
     background-color: none;
 }
+
 
 
 /* ---------------------------------------MENU Escritorio ahora ------------------------------------------------------*/
@@ -545,16 +543,7 @@ transition: all 300ms;
     border-radius: none;
     color: #F6615D;
 }
-#back_menu{
-   
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-background: rgba(0, 0, 0, 0.5);
-display: none; */
-}
+
 #btn_menu{
     display: flex ;
     justify-content: center;
