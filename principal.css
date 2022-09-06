@@ -47,12 +47,20 @@ header{
     *position:fixed;
     z-index: 1;
 }
-
+.contenido-portaretrato{
+    background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
+    background-size: cover;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
 .contenedor-imagen{
     display: flex;
     justify-content: center;
     height: 60%;
-    padding-top: 7rem;
+    padding-top: 4rem;
 
 }
 .inicio .contenedor-imagen img{
@@ -64,6 +72,7 @@ border-radius: 90%;
 color: var(--colorletras-iconos);
 text-shadow: var(--sombraclara) 10px 20px;
 }
+
 
 .contenido-portaretrato h1{
     display: flex;
@@ -226,14 +235,15 @@ font-weight: bold;
     padding-bottom: 40px;
 }
 
-.experiencia .caja-experiencia img{
-    display: flex;
-    justify-content: center;
-    height: 150px;
-    width: 200px;
+.experiencia .caja-experiencia img:hover{
+    transform: scale(1.3);
+    transition: 0.4s;
+    cursor: pointer;
 }
-.experiencia .caja-foto-imagen{
-    border: 3px double;
+.experiencia .caja-foto-imagen img{
+    width: 18rem;
+    height: 13rem;
+    border: 5px double;
     color: var(--acercamientoefecto);
     display: flex;
     justify-content: center;
@@ -319,9 +329,8 @@ padding: 5px;
 }
 
 .caja-portafolio img:hover{
-    width: 20rem;
-    height: 20rem;
-    transition: 1s;
+    transform: scale(1.3);
+    transition: 0.4s;
     cursor: pointer;
 }
 
