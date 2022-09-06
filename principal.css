@@ -25,7 +25,7 @@ background-position: center ;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-/* overflow: hidden; */
+overflow-x:hidden;
 z-index: 101;
 }
 
@@ -481,7 +481,7 @@ padding: 5px;
     color: #F6615D;
 }
 .menu nav{
-    right: 0;
+right: 0;
 }
 .menu nav img{
     display: none;
@@ -498,16 +498,17 @@ padding: 5px;
 /* 
 /* *************************SEPARADOR @MEDIA Menu Celular ahora********************************** */
 
- @media (max-width: 750px ){
- 
+@media (max-width: 750px ){
+
 body{
-    overflow-x: hidden;
+overflow-x: hidden;
+
 }
 
 .menu nav{
 position: fixed;
 top: 0;
-transform:translateX(200%) ;
+transform:translateY(-200%) ;
 background:rgb(211, 150, 150);
 width: 250px;
 height: 100vh;
