@@ -4,6 +4,8 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+text-decoration: none;
+list-style: none;
 }
 
 :root{
@@ -34,17 +36,16 @@ scroll-behavior: smooth;
 }
 
 
-/* @media (max-width: 1600px ){ */
+@media (max-width: 1600px ){
     
 
 /* ---------------------------SECCION DE INICIO IMAGEN E INTRODUCCION----------------------------------------------- */
 
-.inicio{
-background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
-background-size: cover;
-height: auto;
-display: flex;
-justify-content: center;
+header{ 
+    width: 100%;
+    height: 80px;
+    *position:fixed;
+    z-index: 1;
 }
 
 .contenedor-imagen{
@@ -393,38 +394,48 @@ padding: 5px;
     transition: 1s;
     text-shadow: var(--sombraclara) 2px 0px
 }
+#selected{
+    transform: scale(1.1);
+    transition: 0.4s;
+    background-color: none;
+}
 
 
+/* ---------------------------------------MENU Escritorio ahora ------------------------------------------------------*/
 
-/* ---------------------------------------MENU ------------------------------------------------------*/
-.contenedor-encabezado{
+/* colocar color al logo de mi nombre */
+.container__menu{
+    max-width: auto;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     background-image: radial-gradient(circle at -70.44% 43.84%, #37909e 0, #80bdc7 3.85%, #6eb1bb.69%, #5fc9c9 11.54%, #5cc8d0 15.38%, #5bc8d7 19.23%, #5dc7de 23.08%, #61c5e4 26.92%, #68c4e9 30.77%, #71c2ed 34.62%, #7bc0f0 38.46%, #78aad9 42.31%, #79a8e2 46.15%, #8db3ff 50%, #a8b6f1 53.85%, #b4b4ee 57.69%, #beb1ea 61.54%, #c8aee6 65.38%, #d1abe0 69.23%, #d9a9da 73.08%, #e0a7d4 76.92%, #e6a5cc 80.77%, #eba4c5 84.62%, #efa3bd 88.46%, #f2a3b5 92.31%, #f3a3ad 96.15%, #f3a4a5 100%);
     z-index: 100;
     filter: grayscale(100%);
     -webkit-filter: grayscale(78%);
-    position: fixed;
+    padding: 15px;
+    padding-top: 0px;
 }
 
-    /* para mover el logo de mi nombre */
-.contenedor-encabezado header{
-width: 100vw;
+.logo{
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-} 
-    /* colocar color al logo de mi nombre */
-    .logo p {
+}
+
+.logo p{
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     color: rgb(245, 207, 243);
     text-shadow: 0 0 10px rgb(248, 0, 211);
     text-decoration: none;
-    margin: 10px;
+    margin: 0px;
     transition: .6s;
 }
-    /* colocar color al DC mi nombre */
-    .logo p span {
+
+/* colocar color al DC mi nombre */
+.logo p span {
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     color: rgb(255, 94, 0);
@@ -432,73 +443,113 @@ width: 100vw;
     transition: .8s;
 }
 
-.contenedor-encabezado header nav ul li {
+.menu{
+    display:flex;
+    align-items: center;
+    
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
     list-style: none;
-}
-.contenedor-encabezado header nav ul li a{
-    display: none;
+    margin-left: 36px;
 }
 
-
-/* DAR COLOR Y ESPECIFICACIONES AL ICONO */
-.navegador-icono i{
-    display: flex;
-    font-size: 2.5rem;
-    background-color: none;
-    color:rgb(109, 79, 199);
-    padding: 5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.navegador-icono i:hover{
-    color: rgb(99, 55, 102);
-    font-size: 2.8rem;
-    transition: .6s;
-    background-color: #71c2ed;
-    border-radius: 20%;
-}
-
-
-
-/* *************************SEPARADOR @MEDIA********************************** */
-@media (min-width: 750px ){
- 
-header{
-width: auto;
-padding: 0;
-
-}
-
-.navegador-icono i{
-    display: none;
-}   
-
-.contenedor-encabezado header nav ul {
-    display: flex;
- justify-content:space-evenly;
-align-items:center;
-
-} 
- 
-.contenedor-encabezado header nav ul li {
-    list-style: none;
- 
-}
-    /* separar el menu en su interior */
-.contenedor-encabezado header nav ul li a{
-    font-size: 25px;
-    display: flex;
-    transition: .6s;
+.menu ul li a{
     text-decoration: none;
-    padding: 1rem;
+    font-size: 16px;
+    color:var(--colorletras1);
+    text-transform: uppercase;
 }
-.contenedor-encabezado header nav ul li a:hover{
-    font-size: 28px;
-    color: whitesmoke;
-    transition: 0.5s;
-    text-shadow: var(--colorletras2) 2px 0px
+
+#selected{
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #F6615D;
+}
+.menu nav{
+    right: 0;
+}
+.menu nav img{
+    display: none;
+}
+
+#btn_menu{
+    display: none;
+}
+
+
+
+
+
+/* 
+/* *************************SEPARADOR @MEDIA Menu Celular ahora********************************** */
+
+ @media (max-width: 750px ){
+ 
+
+.menu nav{
+position: fixed;
+top: 0;
+right: -250px;
+background:white;
+width: 250px;
+height: 100vh;
+padding: 40px;
+z-index: 1;
+transition: all 300ms;
+}
+
+.menu ul {
+    flex-direction: column;
+    margin-top: 1px;
+}
+.menu ul  li {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
 } 
+#selected{
+    background: none;
+    padding: 0px;
+    border-radius: none;
+    color: #F6615D;
+}
+#back_menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+background: rgba(0, 0, 0, 0.5);
+display: none;
+}
+#btn_menu{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(245, 245, 245, 0.1);
+    font-size: 24px;
+    border-radius:50%;
+    cursor: pointer; 
+    transition: all 300ms;
+}
+#btn_menu{
+    background-color: rgb(245, 245, 245, 0.4);
+}
+/* ********************************************************************************************** */
 
 .contenedor-imagen{
     display: flex;
@@ -714,4 +765,4 @@ padding: 5px;
     text-shadow: var(--sombraclara) 2px 0px
 }
 
-}
+} }
