@@ -35,7 +35,7 @@ scroll-behavior: smooth;
 }
 
 
-@media (max-width: 1600px ){
+@media (max-width: 2000px ){
     
 
 /* ---------------------------SECCION DE INICIO IMAGEN E INTRODUCCION----------------------------------------------- */
@@ -54,11 +54,11 @@ padding-top: 1rem;
 .contenido-portaretrato{
     background-image: linear-gradient(-35deg, rgb(232, 205, 131, .6) 50%, rgb(169, 211, 239, .5) 58%);
     background-size: cover;
+    width: 100vw;
     height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
 }
 .contenedor-imagen{
     display: flex;
@@ -67,6 +67,7 @@ padding-top: 1rem;
     padding-top: 4rem;
 
 }
+
 .inicio .contenedor-imagen img{
 border: 7px double;
 color: var(--acercamientoefecto);
